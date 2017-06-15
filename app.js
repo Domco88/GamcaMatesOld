@@ -3,7 +3,7 @@ var app = express()
 var exphbs  = require('express-handlebars');
 
 app.get('/', function (req, res) {
-    	res.send('Ahoj kamos !!!')
+    	res.send('Ahoj kamos !!!!')
 })
 
 app.get('/otrok', function (req, res) {
