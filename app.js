@@ -23,7 +23,7 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
 
 app.listen(5000, function () {
-  console.log('More tento server ide takze zarobene na kurvy !!')
+  console.log('More tento server ide takze zarobene !!')
 })
 
 
@@ -41,7 +41,7 @@ var Adam = "Pacient pre Pezinok"
 
 vypisOliverhoKamosa(Adam)
 
-vypisOliverhoKamosa("Ten 2. fetak")
+vypisOliverhoKamosa("Ten 2. kamos")
 
 
 var vypisKamosa = function(kamos) {
