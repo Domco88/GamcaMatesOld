@@ -15,16 +15,14 @@ db.once('open', function () {
 
 const mateSchema = mongoose.Schema({
     firstName: { type: String },
-    LastName: { type: String }
+    lastName: { type: String }
 })
 
 
 
-const Models = {
-    mate: mongoose.model('mate', mateSchema)
-}
 
-module.exports = Models
+var Mate =  mongoose.model('mate', mateSchema)
+module.exports = Mate
 // functions
 
 module.exports.addMate = (newMate) => {

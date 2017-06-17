@@ -5,27 +5,24 @@ var exphbs      = require('express-handlebars');
 
 
 const Mate = require('./server/db')
+const Router = require('./server/routes/router')
  
 
-
-
-
-app.get('/', function (req, res) {
-    res.send('Ahoj kamos !!!!')
-})
-
-app.get('/otrok', function (req, res) {
-    res.send('Ahoj otrok social networks!!')
-})
 
 app.get('/kamosi', function (req, res) {
     res.render('home', { name: 'Oliver' , kamos1: kamos, kamos2: jedinnyKamos });
 });
 
 var kamos = "Domco"
+
+
+
+
+
 var jedinnyKamos = "jeho otec"
 
 app.use('/static', express.static('static'))
+app.use('/', Router)
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
