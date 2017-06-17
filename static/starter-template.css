@@ -8,4 +8,11 @@ body {
 .navbar-brand {
   padding-top: 0px;
   }
-  
+ .navbar-form{
+  padding-top: 1px;
+  padding-left: 422px;
+ }
+ .btn-group{
+  padding-top: 1px;
+  padding-right: 374px;
+ } 
